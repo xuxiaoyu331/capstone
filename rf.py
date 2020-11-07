@@ -16,7 +16,7 @@ from pyspark.ml.feature import StringIndexer
 from pyspark.ml.classification import RandomForestClassifier
 from pyspark.ml.evaluation import MulticlassClassificationEvaluator
 
-conf = SparkConf().setAppName('App').setMaster('local[2]')
+conf = SparkConf().setAppName('RandomForest')
 sc = SparkContext(conf=conf)
 sqlContext = SQLContext(sc)
 
